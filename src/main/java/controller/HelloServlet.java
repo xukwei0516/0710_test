@@ -9,6 +9,27 @@ import java.io.IOException;
 import java.lang.ref.ReferenceQueue;
 
 /**
+ *
+ * 一.上传项目方式一
+ * 1.先在github上创建仓库
+ * 2.使用push把本地仓库git项目，推送到远程仓库
+ *  上传项目方式二：
+ * 1. 使用share project on github即可，把本地git项目推送到远程仓库，
+ *   且项目名就是远程仓库名！(测试不行)
+ *二.下载项目
+ *   1.使用checkout方式从远程下载项目（本身就是clone操作）
+ *   2.要指定远程仓库的地址！
+ *
+ * 三.代码上传git仓库
+ *   add(添加到索引仓库)---->commit(提交到本地仓库)---->push(推送到远程仓库)
+ *
+ * 四.共同文件修改
+ *
+ *
+ *
+ *
+ *
+ *
  * 这是我今天的代码
  * @ClassName HelloServlet
  * @Description TODO
@@ -38,6 +59,6 @@ public class HelloServlet extends HttpServlet {
     }
 
     public static void main(String[] args) {
-
+        System.out.println("张三修改了代码1");
     }
 }
