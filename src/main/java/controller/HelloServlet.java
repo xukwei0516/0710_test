@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.lang.ref.ReferenceQueue;
 
 /**
+ * 这是我今天的代码
  * @ClassName HelloServlet
  * @Description TODO
  * @Author Administrator
@@ -33,6 +34,10 @@ public class HelloServlet extends HttpServlet {
         req.setAttribute("localPort", localPort);
        
         req.getRequestDispatcher("/index.jsp").forward(req, resp);
+
+    }
+
+    public static void main(String[] args) {
 
     }
 }
